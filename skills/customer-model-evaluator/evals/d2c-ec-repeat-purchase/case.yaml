@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: d2c-ec-repeat-purchase
+expected_outcome: |
+  Hypothesis-mode CME run for D2C repeat purchase. Produces an interactive Japanese
+  HTML dashboard comparing ~4–6 customer models (including a baseline and at least
+  one non-persona model such as RFM/lifecycle/behavior), distinct tactics per model,
+  three-axis evaluation with 予測力 often 未検証, no fabricated lift percentages as
+  facts, clear evidence tags, and a recommendation plus validation plan aimed at
+  second-purchase rate.

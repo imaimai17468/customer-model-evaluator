@@ -1,0 +1,13 @@
+{
+  "eval_name": "retail-store-visit-aov",
+  "prompt": "都市部のライフスタイル雑貨の実店舗（3店舗）です。会員アプリと紙のクーポンがあります。\n\n目標: 平日の来店頻度を上げつつ、客単価（AOV）も上げたい。週末は混むが平日が弱い。近隣オフィスワーカーがランチ後に寄ることはある。\n\nざっくりペルソナ:\n- 近隣に住む30代女性「休日閲覧の優子」\n- ギフト目的の来店客\n- 観光ついで客（土日）\n\nPOSや来店ログの詳細はこのチャットにはありません。過去施策として「全会員10%オフ」は来店は増えたが値引率の分だけ粗利が悪化した、という社内の所感があります。\n\nCustomer Model Evaluatorとして、来店促進と客単価のどちらにどの顧客理解モデルが効きそうかを比較し、店舗マーケの意思決定用インタラクティブダッシュボード（Artifact/HTML）を日本語で作成してください。推測の精度数値は出さず、検証計画まで含めてください。",
+  "assertions": [
+    "outputs include an interactive HTML dashboard file (cme-dashboard.html or equivalent) with Japanese UI chrome",
+    "the dashboard or summary states hypothesis evaluation mode (仮説評価) rather than claiming empirical measurement",
+    "Compares a simple baseline with multiple store-relevant customer-understanding models, such as store catchment, shopping occasion, visit cadence, or shopping needs.",
+    "Each featured model has a meaningfully different tactic that specifies its target, message or offer, channel, and primary KPI (weekday visits or AOV). Explains the tradeoff between increased store visits and reduced gross margin reported for the blanket member discount.",
+    "Evaluates 説明力, 予測力, and 施策価値 separately and marks predictive power and incremental intervention effect as 未検証 (or equivalent) where POS, visit logs, or experiment evidence is missing.",
+    "Material claims are labeled by evidence type (観測事実, 文献・調査, 仮説, or 推測), and unsupported predictive accuracy or incremental lift is never presented as measured.",
+    "Recommends model–tactic pairs for weekday visits and average order value (AOV) and proposes a validation plan that specifies a comparison group, a measurement window, and a decision criterion, with gross margin as a guardrail given the blanket discount experience."
+  ]
+}

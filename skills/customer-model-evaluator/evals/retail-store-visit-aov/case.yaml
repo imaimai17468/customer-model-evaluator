@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: retail-store-visit-aov
+expected_outcome: |
+  Hypothesis-mode CME for retail visit frequency and AOV. Japanese interactive HTML
+  dashboard selects models suited to store context (e.g. catchment/occasion, visit
+  cadence RFM-like, needs/gift vs browse) plus baseline. Shows why blanket discount
+  may be weak on intervention value, keeps axes separate with 未検証 predictive cells
+  where no POS data, distinct tactics, evidence tagging, recommendation and validation plan.

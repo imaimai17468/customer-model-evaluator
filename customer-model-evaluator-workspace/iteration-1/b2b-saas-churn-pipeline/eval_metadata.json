@@ -1,0 +1,13 @@
+{
+  "eval_name": "b2b-saas-churn-pipeline",
+  "prompt": "B2Bのプロジェクト管理SaaS（SMB〜中堅）です。\n\n今季の優先KPIは2つですが、まずは「無料トライアルから有料化（商談化/セルフサーブ転換）率」を改善したい。あわせて有料顧客の解約も気になっています。SDRがメールとデモで追客、プロダクト内オンボーディングもあり。\n\n既存の社内ペルソナ:\n- ITマネージャー「効率重視の健」\n- 現場リーダー「見える化したい美咲」\n- 経営層「ROIを見る拓也」\n\nわかっていること: トライアル14日。活性化（プロジェクト作成＆メンバー招待）しないと有料化しない傾向、という現場感。正式なコホート分析やCRMのエクスポートは今週は用意できない。\n\nこの条件で、顧客理解モデル（ペルソナ以外も含む）と施策仮説を比較評価し、意思決定用のインタラクティブArtifactを作ってください。CMEとして、説明力・予測力・施策価値を分け、データが無いものは未検証にしてください。UIは日本語。",
+  "assertions": [
+    "outputs include an interactive HTML dashboard file (cme-dashboard.html or equivalent) with Japanese UI chrome",
+    "the dashboard or summary states hypothesis evaluation mode (仮説評価) rather than claiming empirical measurement",
+    "Compares a simple baseline with multiple customer-understanding models, including at least one B2B-relevant model based on firmographics, buying committee, trial lifecycle, or activation behavior.",
+    "Each featured model has a meaningfully different tactic that specifies its target, message or action, and channel. Tactics fit available channels such as SDR email, demos, or in-product onboarding.",
+    "Evaluates 説明力, 予測力, and 施策価値 separately and marks predictive power and incremental intervention effect as 未検証 (or equivalent) where CRM, cohort, or experiment evidence is missing.",
+    "Material claims are labeled by evidence type (観測事実, 文献・調査, 仮説, or 推測), and unsupported predictive accuracy or incremental lift is never presented as measured.",
+    "Recommends a model and tactic for trial-to-paid conversion and proposes a validation plan specifying a comparison group, the follow-up window, and a decision criterion. Treats paid-customer churn as a separate outcome."
+  ]
+}

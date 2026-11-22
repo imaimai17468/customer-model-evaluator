@@ -1,0 +1,13 @@
+{
+  "eval_name": "d2c-ec-repeat-purchase",
+  "prompt": "D2Cのスキンケアブランドです。定期便と単品販売をやっています。\n\n課題: 初回購入後90日以内の2回目購入率を上げたい。今は約18%。目標は25%。メールとLINEが主チャネル。広告予算は現状維持。\n\n商品: 化粧水・美容液のエントリーセット（初回30%オフ）、その後フルサイズへの移行が弱い。\n\n既存ペルソナ:\n1. 「丁寧ケアのみゆき」34歳女性、敏感肌、情報収集を丁寧に行う、口コミ重視\n2. 「時短のあかり」28歳、忙しい会社員、シンプルなルーティン希望\n3. 「ギフトのさとし」41歳男性、パートナーへの贈答が多い\n\n顧客調査メモ: 離脱理由は「使い切り後にリマインドが遅い」「フルサイズが高く感じる」「効果が分からない」。購買データCSVはまだ渡せません。\n\nCustomer Model Evaluator の考え方で、どの顧客理解モデルがこのリピート施策に有効そうか比較し、インタラクティブなダッシュボードArtifact（HTML）で見せてください。日本語UIで。",
+  "assertions": [
+    "outputs include an interactive HTML dashboard file (cme-dashboard.html or equivalent) with Japanese UI chrome",
+    "the dashboard or summary states hypothesis evaluation mode (仮説評価) rather than claiming empirical measurement",
+    "compares about 4–6 customer-understanding models including a simple baseline and at least one non-persona model such as RFM, lifecycle, or behavior",
+    "each featured model has a meaningfully different tactic (who/what/channel), not the same campaign copied under every model",
+    "evaluation separates 説明力, 予測力, and 施策価値; predictive power is marked 未検証 (or equivalent) given no purchase CSV",
+    "Material claims are labeled by evidence type (観測事実, 文献・調査, 仮説, or 推測), and unsupported predictive accuracy or incremental lift is never presented as measured.",
+    "Recommends a model and tactic for 90-day second-purchase rate and proposes a validation plan specifying a comparison group, the measurement window, and a decision criterion."
+  ]
+}
